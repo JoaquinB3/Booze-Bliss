@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+/* variables */
+:root {
+  --background: #F2F8FF;
+  --foreground: #171717;
+
+  --color-primary: #15c0bd;
+  --color-secondary: #000000;
+  --color-tertiary: #1E1E1E;
+  --color-quaternary: #C0C0C0;
+
+}
+
+body {
+  color: var(--foreground);
+  background-color: rgb(44, 44, 44);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
