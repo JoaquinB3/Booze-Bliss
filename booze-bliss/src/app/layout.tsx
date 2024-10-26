@@ -32,15 +32,15 @@ export default function RootLayout({
       href: "/"
     },
     {
-      name: "Vehiculo",
-      href: "/vehiculo"
+      name: "Favoritos",
+      href: "/"
     },
     {
-      name: "Cliente",
+      name: "Top 10",
       href: "#"
     },
     {
-      name: "API",
+      name: "About",
       href: "#"
     }
   ];

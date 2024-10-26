@@ -30,8 +30,8 @@ const Header = ({ links }: HeaderProps) => {
 	};
 
 	return (
-		<header className='fixed top-0 z-[9999999] w-full shadow-lg shadow-gray-400/30 h-[80px] m-auto bg-secondary text-white'>
-			<div className='flex bg-black relative z-[9999999] h-full justify-between items-center max-w-screen-lg lg:max-w-screen-xl 2xl:max-w-screen-2xl m-auto px-10'>
+		<header className='fixed top-0 z-[9999999] w-full shadow-lg shadow-gray-400/30 h-[80px] bg-secondary text-white'>
+			<div className='flex bg-black relative z-[9999999] h-full w-[100%] justify-between items-center max-w-screen-lg lg:max-w-screen-xl 2xl:max-w-screen-2xl m-auto px-10'>
                 <div>
                     <LocalBarIcon sx={{color: "#15c0bd"}} />
                 </div>
