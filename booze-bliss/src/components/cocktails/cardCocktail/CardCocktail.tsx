@@ -62,6 +62,7 @@ const CardCocktail: React.FC<CardCocktailProps> = ({ name, image }) => {
             backgroundColor: "#15c0bd",
             color: "#fff", 
             "&:hover": {
+              color: "#000000",
               backgroundColor: "#18fffc",
             },
           }}

@@ -14,8 +14,13 @@ interface Cocktail {
   strDrinkThumb?: string;
 }
 
-const Catalog: React.FC = () => {
+interface CatalogProps {
+  searchCocktail: string;
+}
+
+const Catalog: React.FC<CatalogProps> = ({searchCocktail}) => {
   const [cocktails, setCocktails] = useState<Cocktail[]>([]);
+
 
   useEffect(() => {
     async function getCocktails() {
@@ -29,11 +34,16 @@ const Catalog: React.FC = () => {
     getCocktails();
   }, []);
 
+  const filteredCocktails = cocktails.filter((cocktail) =>
+    cocktail.strDrink.toLowerCase().includes(searchCocktail.toLowerCase())
+  );
+
   return (
     <div className="mt-[120px] w-[70%] h-auto text-white">
       <h1 className="text-center font-medium text-2xl mb-4">CATALOGO</h1>
+      
       <ul className="flex flex-wrap justify-center">
-        {cocktails.map((cocktail) => (
+        {filteredCocktails.map((cocktail) => (
           <li key={cocktail.idDrink} className="p-2">
             <CardCocktail
               name={cocktail.strDrink}
