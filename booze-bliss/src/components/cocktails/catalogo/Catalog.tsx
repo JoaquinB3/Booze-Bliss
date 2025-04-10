@@ -25,9 +25,8 @@ const Catalog: React.FC<CatalogProps> = ({searchCocktail}) => {
   useEffect(() => {
     async function getCocktails() {
       const data = await fetchAllCocktails();
-
       console.log(data);
-
+      
       setCocktails(data);
     }
 

@@ -1,0 +1,7 @@
+.image{
+    width: 30dvw;
+    height: 100dvh;
+    /* object-fit: cover; */
+    position: fixed;
+}
+

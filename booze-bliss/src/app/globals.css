@@ -13,16 +13,18 @@
   --background: #F2F8FF;
   --foreground: #171717;
 
-  --color-primary: #15c0bd;
-  --color-secondary: #000000;
+  --color-primary: #e4ff49;
+  --color-secondary: #f43f5e;
   --color-tertiary: #1E1E1E;
-  --color-quaternary: #ffffff;
+  --color-quaternary: ;
 
 }
 
 body {
+  
   color: var(--foreground);
-  background-color: rgb(61, 61, 61);
+  /* background-color: rgb(61, 61, 61); */
+
   font-family: Arial, Helvetica, sans-serif;
 }
 
